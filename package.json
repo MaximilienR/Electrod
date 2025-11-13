@@ -1,0 +1,13 @@
+{
+  "name": "electord",
+  "version": "1.0.0",
+  "description": "Bloc-note Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,22 @@
+# Node modules
+/node_modules
+
+# Builds Electron
+/dist
+/out
+/build
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Executables
+*.exe
+*.app
+*.dmg
+*.deb
+*.rpm
+*.snap
+
+# Env files
+.env
