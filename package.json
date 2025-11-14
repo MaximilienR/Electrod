@@ -4,10 +4,32 @@
   "description": "Bloc-note Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^26.2.0"
+    "electron": "^26.2.0",
+    "electron-builder": "^26.0.12"
   },
-  "dependencies": {}
+  "build": {
+    "appId": "com.maximilien.electord",
+    "productName": "Electord",
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!dist",
+      "!**/*.map"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "ico.ico"
+    }
+  },
+  "dependencies": {
+    "pdfkit": "^0.17.2"
+  }
 }
