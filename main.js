@@ -52,7 +52,7 @@ function showDoc() {
         title: "Documentation",
         icon: logoImage,
         message: `
-Développeur : Maximilien Freelance
+Développeur : Maximilien Freelance.
 Année : 2025
 
 Application de prise de notes simple et intuitive.
